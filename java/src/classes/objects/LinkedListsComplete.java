@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class LinkedListsComplete {
     protected LinkedListsElement ll = new LinkedListsElement();
+
     public LinkedListsComplete() {
     }
 
@@ -35,5 +36,5 @@ public class LinkedListsComplete {
 
 
         }*/
-    }
 }
+
