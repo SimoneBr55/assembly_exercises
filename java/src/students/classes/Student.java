@@ -1,4 +1,4 @@
-package classes;
+package students.classes;
 
 import java.io.Serializable;
 import java.util.Objects;
