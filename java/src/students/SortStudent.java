@@ -84,7 +84,7 @@ public class SortStudent {
         */
 
         // OR we can use a lambda function
-        // it is basically an implementation of a interface with only a single method
+        // it is basically an anonymous implementation of an interface with only a single method
         result = filterStudents(students, s -> s.getAverage() < 24 || s.getAverage() > 28);
 
         System.out.println("FilterStudents()...");

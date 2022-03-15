@@ -16,7 +16,7 @@ public class UICounter extends JFrame {
         tfNumber = new JTextField("0");
 
         //btPlus.addActionListener(this);
-        // i can also provide an implementation directly here by declaring the listener via a lambda function (since t
+        // I can also provide an implementation directly here by declaring the listener via a lambda function (since t
         // method would have only one function
         btPlus.addActionListener(e -> {
                 if (e.getActionCommand().equals("+")) {
