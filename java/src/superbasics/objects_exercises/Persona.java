@@ -14,7 +14,7 @@ public class Persona {
         return eta;
     }
 
-    Persona(String nome, int altezza, int eta) {
+    public Persona(String nome, int altezza, int eta) {
         this.nome = nome;
         this.altezza = altezza;
         this.eta = eta;
