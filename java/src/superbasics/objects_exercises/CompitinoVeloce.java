@@ -1,4 +1,4 @@
-package objects_exercises;
+package superbasics.objects_exercises;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package objects_exercises;
+package superbasics.objects_exercises;
 
 public class Program {
     public static void main(String[] args) {

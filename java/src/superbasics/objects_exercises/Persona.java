@@ -1,5 +1,5 @@
 
-package objects_exercises;
+package superbasics.objects_exercises;
 
 public class Persona {
     String nome;
