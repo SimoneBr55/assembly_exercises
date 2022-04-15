@@ -1,28 +1,27 @@
-package oop.laura.oggetti.swing;
+package superbasics.swing;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class Finestra extends JFrame {
  Finestra(){
-
      setTitle("App");
-     setLocation(1000,100);
+     setLocation(200,200);
      setSize(500,500);
      setLayout(null);
+     // defined in another class to declutter the code
+     PannelloInterattivo p1 = new PannelloInterattivo();
 
-     Pannello p = new Pannello();
-     p.setLocation(0,0);
-     p.setBackground(Color.PINK);
-
-     Pannello p2 = new Pannello();
+     add(p1);
+     JPanel p2 = new JPanel();
+     p2.setSize(500,350);
      p2.setLocation(0,250);
      p2.setBackground(Color.LIGHT_GRAY);
 
-     add(p);
      add(p2);
 
      setVisible(true);
+     setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
  }
 
 }

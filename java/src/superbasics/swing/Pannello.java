@@ -1,4 +1,4 @@
-package oop.laura.oggetti.swing;
+package superbasics.swing;
 
 import javax.swing.*;
 import java.awt.*;

@@ -26,9 +26,9 @@ public class Program {
             int eta = scan.nextInt();
 
             Persona p = new Persona(nome, altezza, eta);
-            l.addFirst(p);
+            //l.addFirst(p);
             //l.add(p);
-            //l.addLast(p);
+            l.addLast(p);
 
             scan.nextLine();
         }

@@ -14,6 +14,7 @@ public class AnneList<T> {
         ItemList<T> successore = primo;
 
         primo = new ItemList<T>(daAggiungere, null, successore);
+        if ( successore != null ) successore.precedente = primo;
         if (length == 1){
             ultimo = primo;
         }
@@ -23,7 +24,8 @@ public class AnneList<T> {
         length++;
         ItemList<T> precedente = ultimo;
         primo = new ItemList<>(daAggiungere, precedente,null);
-        precedente.successore = ultimo;
+        if(primo.successore != null) primo.successore = ultimo;
+
         if (length == 1){
             primo = ultimo;
         }
@@ -49,7 +51,7 @@ public class AnneList<T> {
 
     public T get(int index) {
         ItemList<T> inScorrimento = primo;
-        for (int i = 0; i < index; i++){
+        for (int i = 0; i < index - 1; i++){
             inScorrimento = inScorrimento.successore;
         }
         return inScorrimento.corrente;

@@ -53,11 +53,11 @@ public class Medico {
     private void eseguiAzione() {
         Persona e = null;
         try {
-            if (risposta == 0) {continua = false;}
-            if (risposta == 1) {e = richiediPersona(); lista.addLast(e);}       // aggiungi in coda
-            if (risposta == 2) {e = richiediPersona(); lista.addFirst(e);}      // aggiungi in testa
-            if (risposta == 3) {lista.removeLast();}                            // rimuovi in coda
-            if (risposta == 4) {lista.removeFirst();}                            //rimuovi in testa
+            if (risposta == 0) continua = false;
+            if (risposta == 1) {e = richiediPersona(); lista.addLast(e);};       // aggiungi in coda
+            if (risposta == 2) {e = richiediPersona(); lista.addFirst(e);};      // aggiungi in testa
+            if (risposta == 3) lista.removeLast();                            // rimuovi in coda
+            if (risposta == 4) lista.removeFirst();                            //rimuovi in testa
         } catch (NoSuchElementException exc) {
             System.out.println("ERROR: la lista è ancora vuota!");
         }

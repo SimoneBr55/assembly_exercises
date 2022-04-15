@@ -20,7 +20,7 @@ public class Persona {
         this.eta = eta;
     }
 
-    Persona(String nome) {
+    public Persona(String nome) {
         this.nome = nome;
         this.altezza = (int)(Math.random() * 50 +150);
         this.eta = (int)(Math.random() * 100 + 18);
