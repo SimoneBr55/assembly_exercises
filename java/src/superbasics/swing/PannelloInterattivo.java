@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class PannelloInterattivo extends JPanel {
+public class PannelloInterattivo extends JPanel implements ActionListener {
 
     JTextField tf;
     JButton b1;
@@ -29,7 +29,7 @@ public class PannelloInterattivo extends JPanel {
         b1.setLocation(100,0);
         add(b1);
 
-        b1.addActionListener(new ActionListener() {
+        /*b1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e){
                 String testo;
@@ -45,7 +45,9 @@ public class PannelloInterattivo extends JPanel {
                 //System.out.println(testo);
                 //System.out.println("Sono stato premuto");
             }
-        });
+        });*/
+
+        b1.addActionListener(this);
 
         l1 = new JLabel();
         l1.setSize(100,50);
@@ -54,6 +56,13 @@ public class PannelloInterattivo extends JPanel {
         l1.setOpaque(true);
         l1.setBackground(Color.CYAN);
         add(l1);
+    }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String testo;
+        if ("".equals(tf.getText())){ testo = "ERROR";}
+        else {testo = tf.getText();}
+        l1.setText(testo);
     }
 }
