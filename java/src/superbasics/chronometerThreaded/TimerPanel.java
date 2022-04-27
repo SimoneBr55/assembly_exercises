@@ -17,26 +17,28 @@ public class TimerPanel extends JPanel {
         pause = new JButton("PAUSE");
         start = new JButton("START");
         stop = new JButton("STOP");
-
+/*
         start.addActionListener(new starts());
         pause.addActionListener(new starts());
         stop.addActionListener(new starts());
-
+*/
         add(l_time);
         add(start);
         add(pause);
         add(stop);
 
         java.util.Timer updateTimer = new java.util.Timer();
-        updateTimer.scheduleAtFixedRate(new TimerTask() {
+       /* updateTimer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run(){
                 t.update(int_min, int_sec, int_mil);
             }
         },0,100);
+
+        */
     }
 
     public void update(long minutes, long seconds, long milliseconds) {
-        String sec = Integer.toString();
+       // String sec = Integer.toString();
     }
 }

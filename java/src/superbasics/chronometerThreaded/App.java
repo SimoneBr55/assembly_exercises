@@ -1,19 +1,18 @@
 package superbasics.chronometerThreaded;
 
-public class App implements Runnable {
+public class App extends Thread {
     public void run(){
         //Here time flows
-        System.out.println("Threading");
-    }
-    public static void main(String[] args) {
-        Thread thread = new Thread();
-        thread.start();
         try {
-            thread.wait();
+            this.wait(1000);
         } catch (Exception e){
             System.out.println(e);
+            System.out.println("Not threading");
         }
+    }
+    public static void main(String[] args) {
+        App c = new App();
+        c.run();
 
-        System.out.println("Not Threading");
     }
 }
